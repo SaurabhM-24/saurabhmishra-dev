@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Mishra — Software, Data Engineering &amp; Cybersecurity | Portfolio</title>
+
+  <meta name="description"
+    content="Portfolio of Saurabh Mishra — Software Development Engineer Intern at Nielsen Media India, Data Engineering practitioner &amp; Cybersecurity enthusiast. LeetCode Knight, TryHackMe 400+ day streak.">
+  <meta name="author" content="Saurabh Mishra">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saurabhmishra.dev/">
+  <meta property="og:title" content="Saurabh Mishra — Software, Data Engineering &amp; Cybersecurity Portfolio">
+  <meta property="og:description"
+    content="SDE Intern at Nielsen Media India. Final-year B.Tech CSE student (Hons. in Cybersecurity) &amp; IIT Guwahati Data Science scholar. Seeking full-time SDE-1 roles.">
+  <meta property="og:image" content="https://saurabhmishra.dev/assets/images/portrait.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saurabh Mishra — Software, Data Engineering &amp; Cybersecurity Portfolio">
+  <meta name="twitter:description"
+    content="SDE Intern at Nielsen Media India. Final-year B.Tech CSE student (Hons. in Cybersecurity) &amp; IIT Guwahati Data Science scholar.">
+  <meta name="twitter:image" content="https://saurabhmishra.dev/assets/images/portrait.jpg">
+
+  <!-- Inline SVG Favicon (Monochrome SM Monogram) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000000' rx='8'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='700' font-size='30' fill='%23FFFFFF'%3ESM%3C/text%3E%3C/svg%3E">
+
+  <!-- Typography: Playfair Display (Serif) & Inter (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Fixed Sticky Minimal Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo Wordmark -->
+      <a href="#top" class="brand-logo" aria-label="Saurabh Mishra Home">
+        <span>Saurabh Mishra</span>
+        <span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Desktop Navigation Links + Resume CTA -->
+      <div class="nav-desktop">
+        <nav class="site-nav" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="assets/Saurabh_Mishra_Resume.pdf" download class="btn-header-resume"
+          aria-label="Download Saurabh Mishra Resume in PDF format">
+          <span>Resume</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Displayed when screen is too narrow for all buttons in one row) -->
+      <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile navigation menu"
+        aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Flyout Navigation Drawer & Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigation</span>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="#about" class="drawer-link">01. About</a>
+      <a href="#experience" class="drawer-link">02. Experience</a>
+      <a href="#projects" class="drawer-link">03. Projects</a>
+      <a href="#skills" class="drawer-link">04. Skills</a>
+      <a href="#education" class="drawer-link">05. Education</a>
+      <a href="#contact" class="drawer-link">06. Contact</a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="assets/Saurabh_Mishra_Resume.pdf" download class="btn btn-primary drawer-resume-btn"
+        aria-label="Download Resume in PDF format">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download Resume (PDF)</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero Section (#top — Full-Section Right-Side Portrait with Diagonal Clip) -->
+    <section class="hero-section" id="top" aria-label="Introduction">
+
+      <!-- Content Container -->
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">PORTFOLIO &amp; CURRICULUM VITAE</span>
+          <h1>Saurabh Mishra</h1>
+          <p class="hero-role">SDE Intern at Nielsen Media &middot; Final-Year B.Tech CSE</p>
+
+          <p class="hero-summary">
+            On-site SDE Intern at Nielsen Media India building low-latency backend
+            microservices and scalable data pipelines. Final year B.Tech in CSE (Hons. in Cybersecurity).
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="assets/Saurabh_Mishra_Resume.pdf" download class="btn btn-primary"
+              aria-label="Download PDF Resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Contact Links (GitHub, LinkedIn, LeetCode, Email) -->
+          <div class="hero-links-strip">
+            <a href="https://github.com/SaurabhM-24" target="_blank" rel="noopener noreferrer" class="inline-link"
+              aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>github.com/SaurabhM-24</span>
+            </a>
+
+            <a href="https://linkedin.com/in/saurabh-24-mishra" target="_blank" rel="noopener noreferrer"
+              class="inline-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>linkedin.com/in/saurabh-24-mishra</span>
+            </a>
+
+            <a href="https://leetcode.com/u/SaurabhM-24/" target="_blank" rel="noopener noreferrer" class="inline-link"
+              aria-label="LeetCode Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.247 2.198 5.894 2.179 8.118-.043l3.714-3.714a1.376 1.376 0 1 0-1.946-1.946l-3.713 3.714a3.02 3.02 0 0 1-4.238.022l-4.276-4.193a3.176 3.176 0 0 1-.77-1.125 3.03 3.03 0 0 1-.033-1.26 3.038 3.038 0 0 1 .65-1.144l3.855-4.127 5.405-5.786a1.372 1.372 0 0 0-.968-2.344zm3.935 8.333a1.376 1.376 0 0 0-1.376 1.376v5.508a1.376 1.376 0 1 0 2.752 0V9.709a1.376 1.376 0 0 0-1.376-1.376z" />
+              </svg>
+              <span>leetcode.com/u/SaurabhM-24</span>
+            </a>
+
+            <a href="mailto:hello@saurabhmishra.dev" class="inline-link" aria-label="Email Saurabh Mishra">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 4.714v-9.428l4.623 4.714zm1.441 1.448l3.936 4.013 3.936-4.013 5.438 5.623h-18.748l5.438-5.623zm9.313-1.448l4.623-4.714v9.428l-4.623-4.714zm-8.377-2.929l-6.842-6h19.684l-6.842 6-3 2.929-3-2.929z" />
+              </svg>
+              <span>hello@saurabhmishra.dev</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Complete Right-Side Portrait (Edge-to-Edge with Diagonal Slant on Desktop; 10% Background on Mobile) -->
+      <div class="hero-section-portrait" aria-hidden="true">
+        <img src="assets/images/portrait.jpg" alt="Portrait of Saurabh Mishra" class="hero-portrait-img" loading="eager"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hero-monogram" style="display: none;">
+          <span class="hero-monogram-initials">SM</span>
+          <span class="hero-monogram-caption">Saurabh Mishra</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 01. About Section (#about) -->
+    <section class="section section-offwhite" id="about" aria-label="About Saurabh Mishra">
+      <div class="container">
+        <h2 class="section-heading"><span class="section-num">01.</span> About</h2>
+
+        <div class="about-grid">
+          <!-- Left Column (35%) -->
+          <div class="about-focus-col">
+            <p class="about-focus-lead">
+              Focused on building reliable backend systems, high-throughput microservices, and security-first
+              architectures.
+            </p>
+
+            <div class="about-meta-box">
+              <div class="about-meta-item">
+                <strong>Current:</strong>
+                <span>SDE Intern @ Nielsen Media (Bengaluru)</span>
+              </div>
+              <div class="about-meta-item">
+                <strong>Education:</strong>
+                <span>B.Tech CSE (LPU) &middot; B.Sc. Data Science (IIT-G)</span>
+              </div>
+              <div class="about-meta-item">
+                <strong>Problem Solving:</strong>
+                <span>LeetCode Knight &middot; 400+ Days TryHackMe</span>
+              </div>
+              <div class="about-meta-item">
+                <strong>Status:</strong>
+                <span>Available for SDE-1 / SWE roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (65% — Shuffled: Experience First, Education Second, Problem Solving Third) -->
+          <div class="about-text-col">
+            <p>
+              I am currently an on-site Software Development Engineer Intern at <strong>Nielsen Media India</strong> in
+              Bengaluru, where I architect and deploy high-throughput Spring Boot and OpenSearch microservices that cut
+              query latency by over 95%, and help migrate 50+ Spark data pipelines to AWS Graviton. I also hold hands-on
+              API security auditing experience from my internship with <strong>Indian Cybersecurity Solutions</strong>.
+            </p>
+            <p>
+              Concurrently, I am completing my <strong>B.Tech in Computer Science &amp; Engineering (Hons. in
+                Cybersecurity)</strong> at Lovely
+              Professional University while pursuing a <strong>B.Sc. in Data Science
+                &amp; AI from IIT Guwahati</strong>. My studies and engineering projects focus on backend architecture,
+              distributed data processing, and applied cryptography.
+            </p>
+            <p>
+              I am driven by deep technical problem-solving and rigorous engineering. I am a <a
+                href="https://leetcode.com/u/SaurabhM-24/" target="_blank" rel="noopener noreferrer"
+                style="color: var(--color-black); font-weight: 600; text-decoration: underline;">LeetCode Knight</a>
+              (ranked in the top ~4% globally) and maintain an active <strong>400+ day continuous streak on
+                TryHackMe</strong>, applying algorithmic precision and security-first principles to everything I build.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. Experience Section (#experience) -->
+    <section class="section" id="experience" aria-label="Work Experience">
+      <div class="container">
+        <h2 class="section-heading"><span class="section-num">02.</span> Experience</h2>
+
+        <div class="timeline">
+
+          <!-- Experience Item 1 -->
+          <article class="timeline-entry">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <header class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Development Engineer Intern</h3>
+                <p class="timeline-org">Nielsen Media &middot; Bengaluru, India</p>
+              </div>
+              <time class="timeline-date">Feb 2026 &ndash; Present</time>
+            </header>
+
+            <div class="timeline-bullets">
+              <div class="timeline-bullet">
+                Slashed internal RAG query latency by <strong>&gt;95%</strong> (&gt;2,000ms to &lt;100ms) by
+                architecting and deploying a high-throughput <strong>Java Spring Boot</strong> and OpenSearch hybrid
+                search microservice.
+              </div>
+              <div class="timeline-bullet">
+                Reduced team cloud compute costs by <strong>&gt;50%</strong> ($20K+ to $10K) by spearheading the
+                migration of <strong>50+ production pipelines</strong> from AWS EMR 6 (x86) to EMR 7 on ARM-based AWS
+                Graviton instances.
+              </div>
+              <div class="timeline-bullet">
+                Prevented downstream data corruption by building scalable asynchronous ETL pipelines with <strong>Apache
+                  Spark</strong>, <strong>Apache Airflow</strong>, and AWS S3 featuring automated Data Quality Assurance
+                (DQA) validation checks.
+              </div>
+              <div class="timeline-bullet">
+                Maintained mission-critical SLA compliance across core enterprise repositories in an
+                <strong>Agile/Scrum</strong> team by triaging <strong>JIRA</strong> incidents and mitigating production
+                pipeline failures.
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience Item 2 -->
+          <article class="timeline-entry">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <header class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Cybersecurity Intern</h3>
+                <p class="timeline-org">Indian Cybersecurity Solutions &middot; Remote</p>
+              </div>
+              <time class="timeline-date">Jan 2026 &ndash; Mar 2026</time>
+            </header>
+
+            <div class="timeline-bullets">
+              <div class="timeline-bullet">
+                Enforced <strong>OWASP Top 10</strong> compliance across live <strong>RESTful APIs</strong> by executing
+                VAPT audits with <strong>Postman</strong> and Nmap, remediating injection, broken authentication, and
+                excessive data exposure flaws.
+              </div>
+              <div class="timeline-bullet">
+                Conducted continuous vulnerability assessments and cryptographic boundary reviews to secure data
+                transmission pipelines and harden microservice authentication gates.
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience Item 3 -->
+          <article class="timeline-entry">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <header class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web &amp; Technical SEO Intern</h3>
+                <p class="timeline-org">SearchAshiyana &middot; Remote</p>
+              </div>
+              <time class="timeline-date">Jun 2025 &ndash; Aug 2025</time>
+            </header>
+
+            <div class="timeline-bullets">
+              <div class="timeline-bullet">
+                Engineered technical on-page architecture, indexing pipelines, and Core Web Vitals optimizations that
+                drove organic search rankings into the <strong>Top 5&ndash;10</strong> across target competitive
+                keywords.
+              </div>
+              <div class="timeline-bullet">
+                Streamlined site telemetry, crawl error resolution, and structured data schemas to maximize algorithmic
+                discoverability and reduce page load times.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Selected Projects (#projects) -->
+    <section class="section section-offwhite" id="projects" aria-label="Projects">
+      <div class="container">
+
+        <div class="projects-header-group">
+          <h2 class="section-heading"><span class="section-num">03.</span> Selected Projects</h2>
+          <p class="projects-intro">
+            A selection of backend microservices, cryptographic tools, and applied AI applications.
+          </p>
+        </div>
+
+        <!-- Projects Grid (2-Column Responsive CSS Grid) -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Clarify -->
+          <article class="project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category">AI Systems &middot; Multi-Agent</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Clarify &mdash; Multi-Agent AI Orchestration Platform</h3>
+              <p class="project-desc">
+                Eliminated single-pass LLM prompt ambiguity by building a <strong>stateful 5-agent directed graph
+                  workflow</strong> with FastAPI, LangGraph, and typed domain models. Containerized with Docker and
+                verified with automated Pytest suites.
+              </p>
+            </div>
+            <div>
+              <div class="project-pills">
+                <span class="pill">Python</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">LangGraph</span>
+                <span class="pill">Next.js</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Docker</span>
+                <span class="pill">Pytest</span>
+              </div>
+              <div class="project-links">
+                <a href="https://clarify.saurabhmishra.dev" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>Live Platform</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+                <a href="https://github.com/SaurabhM-24" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: GreenBar -->
+          <article class="project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category">Cryptography &middot; PWA</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">GreenBar &mdash; Zero-Knowledge Personal Finance PWA</h3>
+              <p class="project-desc">
+                Built a client-side encrypted budget tracker that encrypts all financial data on-device using Web Crypto
+                APIs before syncing to <strong>PostgreSQL</strong>. Features reactive HealthRing budget meters and
+                offline PWA support.
+              </p>
+            </div>
+            <div>
+              <div class="project-pills">
+                <span class="pill">SvelteKit</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">Supabase</span>
+                <span class="pill">Web Crypto API</span>
+                <span class="pill">PWA</span>
+              </div>
+              <div class="project-links">
+                <a href="https://greenbar.saurabhmishra.dev" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>Live App</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+                <a href="https://github.com/SaurabhM-24" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Citadel -->
+          <article class="project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category">Systems &middot; Security</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Citadel &mdash; Zero-Knowledge Cryptographic Vault</h3>
+              <p class="project-desc">
+                Implemented a local-first credential vault using a <strong>three-tier envelope encryption
+                  architecture</strong> with Argon2id key derivation, XChaCha20-Poly1305 authenticated encryption, and
+                tamper-evident CBOR binary storage.
+              </p>
+            </div>
+            <div>
+              <div class="project-pills">
+                <span class="pill">Python</span>
+                <span class="pill">Argon2id</span>
+                <span class="pill">XChaCha20-Poly1305</span>
+                <span class="pill">CBOR</span>
+                <span class="pill">Security Audit</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SaurabhM-24/Citadel" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>Repository</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Khel-Connect -->
+          <article class="project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category">Computer Vision &middot; Mobile</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Khel-Connect &mdash; AI Athletic Talent Assessment</h3>
+              <p class="project-desc">
+                Mobile sports performance assessment app utilizing on-device computer vision and kinematic pose
+                estimation to evaluate jump height, sprint velocity, and athletic form for grassroots sports scouting.
+              </p>
+            </div>
+            <div>
+              <div class="project-pills">
+                <span class="pill">React Native</span>
+                <span class="pill">MediaPipe</span>
+                <span class="pill">OpenCV</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SaurabhM-24" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Repository</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Technical Skills (#skills) -->
+    <section class="section" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        <h2 class="section-heading"><span class="section-num">04.</span> Technical Skills</h2>
+
+        <div class="skills-grid">
+
+          <!-- Category 1 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              Languages &amp; Core
+              <span>01</span>
+            </h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-name">Java</span>
+                <span class="skill-detail">OOP &middot; Spring &middot; JVM</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-detail">FastAPI &middot; Async &middot; Pytest</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">SQL</span>
+                <span class="skill-detail">PostgreSQL &middot; Query Opt.</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">C / C++</span>
+                <span class="skill-detail">Data Structures &middot; Algorithms</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-detail">Node.js &middot; Web APIs &middot; Async</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Scala</span>
+                <span class="skill-detail">Functional Data Pipelines</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Bash &middot; Shell</span>
+                <span class="skill-detail">Linux Automation &middot; CLI</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              Backend &amp; Distributed Systems
+              <span>02</span>
+            </h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-name">Java Spring Boot</span>
+                <span class="skill-detail">Microservices &middot; REST</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">FastAPI &middot; Django</span>
+                <span class="skill-detail">Asynchronous APIs</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Apache Spark</span>
+                <span class="skill-detail">Distributed ETL &middot; EMR</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Apache Airflow</span>
+                <span class="skill-detail">Directed Workflow DAGs</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">LangGraph</span>
+                <span class="skill-detail">Stateful Multi-Agent AI</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Node.js &amp; Express</span>
+                <span class="skill-detail">Lightweight Services</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Microservices Architecture</span>
+                <span class="skill-detail">Decoupled Systems</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              Databases, Cloud &amp; Security
+              <span>03</span>
+            </h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-name">PostgreSQL &middot; Supabase</span>
+                <span class="skill-detail">Relational &middot; Schemas</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">OpenSearch &middot; SQLite</span>
+                <span class="skill-detail">Hybrid Search &middot; Embedded</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">AWS (EMR, S3, Graviton)</span>
+                <span class="skill-detail">Cloud Infrastructure</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Docker &amp; CI/CD</span>
+                <span class="skill-detail">GitHub Actions &middot; Containers</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">OWASP Top 10 &middot; VAPT</span>
+                <span class="skill-detail">Postman &middot; Nmap &middot; Audits</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Web Cryptography API</span>
+                <span class="skill-detail">Argon2id &middot; Zero-Knowledge</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Linux Systems</span>
+                <span class="skill-detail">Arch Linux &middot; POSIX</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. Education & Achievements (#education) -->
+    <section class="section section-offwhite" id="education" aria-label="Education and Leadership Achievements">
+      <div class="container">
+        <h2 class="section-heading"><span class="section-num">05.</span> Education &amp; Achievements</h2>
+
+        <div class="education-grid">
+
+          <!-- Left Column: Education (with vertical border divider on desktop) -->
+          <div class="edu-col-left">
+            <h3 class="edu-column-title">Formal Education</h3>
+
+            <article class="edu-entry">
+              <h4 class="edu-institution">Lovely Professional University</h4>
+              <p class="edu-degree">B.Tech in Computer Science and Engineering (Hons. in Cybersecurity)</p>
+              <div class="edu-meta-line">
+                <span>Phagwara, Punjab</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Expected July 2027</span>
+                <span class="edu-cgpa">CGPA: 8.9 / 10.0</span>
+              </div>
+              <p class="edu-notes">
+                Core coursework: Data Structures &amp; Algorithms, Operating Systems, Database Management Systems,
+                Computer Networks, Network Security &amp; Cryptography, Object-Oriented Software Engineering.
+              </p>
+            </article>
+
+            <article class="edu-entry">
+              <h4 class="edu-institution">Indian Institute of Technology (IIT) Guwahati</h4>
+              <p class="edu-degree">Online B.Sc. (Hons.) in Data Science &amp; Artificial Intelligence</p>
+              <div class="edu-meta-line">
+                <span>Guwahati, Assam</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Expected July 2028</span>
+                <span class="edu-cgpa">CGPA: 9.32 / 10.0</span>
+              </div>
+              <p class="edu-notes">
+                Rigorous curriculum in linear algebra, mathematical statistics, machine learning fundamentals,
+                distributed data systems, and algorithmic reasoning.
+              </p>
+            </article>
+          </div>
+
+          <!-- Right Column: Leadership & Achievements -->
+          <div class="edu-col-right">
+            <h3 class="edu-column-title">Leadership &amp; Achievements</h3>
+
+            <div class="achieve-group">
+              <span class="achieve-subtitle">Engineering Leadership</span>
+              <ul class="achieve-list">
+                <li class="achieve-item">
+                  <strong>Chief Operating Officer (COO)</strong> &mdash; <em>Drive Dev Student Organization</em> (Nov
+                  2024 &ndash; Present): Directed technical developer workshops, hands-on hackathons, and cybersecurity
+                  CTFs.
+                </li>
+                <li class="achieve-item">
+                  <strong>Student Tutor</strong> &mdash; <em>Internet Programming Lab</em>, Lovely Professional
+                  University: Mentored students on modern web engineering standards, client-server architectures, and
+                  debugging.
+                </li>
+                <li class="achieve-item">
+                  <strong>Public Speaking Head</strong> &mdash; <em>Student Career Committee (TPC)</em>: Spearheaded
+                  corporate recruiter outreach and trained university delegates in interview readiness and professional
+                  communication.
+                </li>
+              </ul>
+            </div>
+
+            <div class="achieve-group">
+              <span class="achieve-subtitle">Honors, Competitions &amp; Certifications</span>
+              <ul class="achieve-list">
+                <li class="achieve-item">
+                  <strong>Problem Solving &amp; Security:</strong> <a href="https://leetcode.com/u/SaurabhM-24/"
+                    target="_blank" rel="noopener noreferrer"
+                    style="color: var(--color-black); font-weight: 600; text-decoration: underline;">LeetCode Knight</a>
+                  (top ~4% globally) &middot; <strong>400+ days continuous streak on TryHackMe</strong> &middot;
+                  Recognized contributor in LPU&rsquo;s Open Source Contributors Drive.
+                </li>
+                <li class="achieve-item">
+                  <strong>National Finalist</strong> &mdash; <em>CipherThon 2.0</em> (Rapid full-stack prototyping,
+                  systems architecture, and security design under tight time constraints).
+                </li>
+                <li class="achieve-item">
+                  <strong>Team Leader</strong> &mdash; <em>Smart India Hackathon (SIH)</em>: Led multi-disciplinary
+                  engineering squad across system design, API contracts, and real-time execution.
+                </li>
+                <li class="achieve-item">
+                  <strong>1st Place</strong> &mdash; University Group Discussion Competition, Centre of Professional
+                  Enhancement, LPU.
+                </li>
+                <li class="achieve-item">
+                  <strong>Industry Certifications:</strong> <em>Delivering Quality Work with Agility</em> (IBM) &middot;
+                  <em>Foundations of Cybersecurity</em> (Google) &middot; <em>Computer Communications
+                    Specialization</em> (Univ. of Colorado) &middot; <em>Java Programming &amp; OOP</em> (72-hr
+                  intensive).
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. Contact Section (#contact & <footer>) -->
+    <section class="section contact-section" id="contact" aria-label="Contact Information">
+      <div class="container">
+        <h2 class="section-heading"><span class="section-num">06.</span> Get in Touch</h2>
+
+        <div class="contact-content">
+          <div>
+            <h3 class="contact-copy-title">Let&rsquo;s connect.</h3>
+            <p class="contact-copy-body">
+              I am actively seeking entry-level <strong>Software Engineering (SDE-1)</strong> and <strong>Data
+                Engineering</strong> opportunities. If you're recruiting or would like to discuss backend systems, feel
+              free to reach out.
+            </p>
+            <div class="hero-cta-group">
+              <a href="mailto:hello@saurabhmishra.dev" class="btn btn-primary"
+                aria-label="Send email to hello@saurabhmishra.dev">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Write an Email</span>
+              </a>
+
+              <a href="assets/Saurabh_Mishra_Resume.pdf" download class="btn btn-charcoal"
+                aria-label="Download PDF Resume from footer">
+                <span>Download Resume (PDF)</span>
+                <span aria-hidden="true">&darr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Details Grid -->
+          <div class="contact-links-grid" aria-label="Direct Contact Links">
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">Primary Email</span>
+              <div style="display: flex; align-items: center;">
+                <a href="mailto:hello@saurabhmishra.dev" class="contact-row-val">hello@saurabhmishra.dev</a>
+                <button type="button" class="copy-email-btn" data-copy-text="hello@saurabhmishra.dev"
+                  aria-label="Copy primary email to clipboard">Copy</button>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">Alternate Email</span>
+              <div style="display: flex; align-items: center;">
+                <a href="mailto:mishra.saurabh@hotmail.com" class="contact-row-val">mishra.saurabh@hotmail.com</a>
+                <button type="button" class="copy-email-btn" data-copy-text="mishra.saurabh@hotmail.com"
+                  aria-label="Copy alternate email to clipboard">Copy</button>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/saurabh-24-mishra" target="_blank" rel="noopener noreferrer"
+                class="contact-row-val">
+                <span>linkedin.com/in/saurabh-24-mishra</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">GitHub</span>
+              <a href="https://github.com/SaurabhM-24" target="_blank" rel="noopener noreferrer"
+                class="contact-row-val">
+                <span>github.com/SaurabhM-24</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">LeetCode</span>
+              <a href="https://leetcode.com/u/SaurabhM-24/" target="_blank" rel="noopener noreferrer"
+                class="contact-row-val">
+                <span>leetcode.com/u/SaurabhM-24</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-row-label">Location</span>
+              <span class="contact-row-val" style="text-decoration: none;">Bengaluru, Karnataka, India</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer">
+          <p class="footer-copy">
+            &copy; 2026 <strong>Saurabh Mishra</strong> &middot; <a href="https://saurabhmishra.dev"
+              style="color: inherit; text-decoration: underline;">saurabhmishra.dev</a>
+          </p>
+          <p class="footer-tech">
+            Semantic HTML5 &middot; Modern CSS3 &middot; Minimal Vanilla JS &middot; Zero-Build
+          </p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>
